@@ -1,0 +1,15 @@
+void rotate(int a[], int n)
+{
+     int temp=a[n-1];
+   vector<int>v;
+   v.push_back(temp);
+   for(int i=0;i<n-1;i++)
+   {
+       v.push_back(a[i]);
+   }
+   
+    for(int i=0;i<n;i++)
+   {
+       a[i]=v[i];
+   }
+}
